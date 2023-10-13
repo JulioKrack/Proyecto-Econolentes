@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/login.css">
+    <title>Iniciar Sesión</title>
+</head>
+
+<body>
+    <form id="container" action="validar.php" method="post">
+
+        <h1>Bienvenido</h1>
+
+        <div class="contenedor">
+
+            <div class="datos-registro">
+                <label for="usuario">Usuario</label>
+                <input type="text" name="email">
+            </div>
+
+            <div class="datos-registro">
+                <label for="contraseña">Contraseña</label>
+                <input type="password" name="contrasena">
+            </div>
+
+        </div>
+
+        <div class="olvido-contraseña">
+            <a href="#">¿Ha olvidado su contraseña?</a>
+        </div>
+
+        <div class="btn-iniciar">
+            <button type="submit">Iniciar Sesión</button>
+        </div>
+
+        <div class="referencia">
+            <p>¿Aún no tienes una cuenta? <a href="./registro.html">registrate aqui</a></p>
+        </div>
+    </form>
+
+</body>
+
+</html>

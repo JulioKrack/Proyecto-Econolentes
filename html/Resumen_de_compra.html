@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../css/Resumen de compra.css">
+    <title>Resumen de compra</title>
+</head>
+<body>
+    <div class="container">
+        <div class="column">
+            <form action="/action_page.php">
+                <div class="contenedor">
+                    <div class="columna1">
+                        <label for="fname">Nombre:	</label><br><br>
+                        <label for="lname">Apellidos:	</label><br><br>
+                        <label for="tel">Teléfono:	</label><br><br>
+                        <label for="email">E-mail:	</label><br><br>
+                    </div>
+                    <div class="columna2">
+                        <input type="text" id="fname" name="fname"><br><br>
+                        <input type="text" id="lname" name="lname"><br><br>
+                        <input type="text" id="tel" name="tel"><br><br>
+                        <input type="text" id="email" name="email"><br><br>
+                    </div>
+                </div>
+                <div class="contenedor">
+                    <div class="columna1">
+                        <label for="card">Número de tarjeta:</label><br><br>
+                        <label for="expiración">Fecha de expiración:</label><br><br>
+                        <label for="CVC">CVC:</label><br><br>
+                    </div>
+                    <div class="columna2">
+                        <input type="text" id="card" name="card"><br><br>
+                        <input type="text" id="expiración" name="expiración"><br><br>
+                        <input type="text" id="CVC" name="CVC"><br><br>
+                    </div>
+                </div>
+            </form>
+            <section class="container flex center">
+                <div class="botones">
+                    <a href="#" class="btn-precio">Pagar</a>
+                    <a href="#" class="btn-precio">Volver</a>
+                </div>
+            </section>
+        </div>
+        <div class="linea-vertical"></div>
+        <div class="column">
+            <h2>Resumen de compra</h2>
+            <table>
+                <tr>
+                    <td>Producto 1</td>
+                    <td>S/.</td>
+                    <td>70</td>
+                </tr>
+                <tr>
+                    <td>Producto 2</td>
+                    <td>S/.</td>
+                    <td>98</td>
+                </tr>
+                <br><hr><br>
+                <tr>
+                    <th>Total:</th>
+                    <th>S/.</th>
+                    <th>168</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

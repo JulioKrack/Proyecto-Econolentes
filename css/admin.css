@@ -1,0 +1,158 @@
+/* para todos */
+header{
+    padding: 40px;
+    background: #E1E1E1;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.titulo{
+    text-align: center;
+}
+
+
+/* para las tablas de las gestiones */
+table{
+    border: 2px solid black;
+    border-collapse: collapse;
+  }
+th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 15px 55px;
+}
+th{
+    border: 3px solid black;
+}
+
+/* para el menu de las gestiones */
+.enlaces{
+    text-align: right;
+
+}
+.enlaces a{
+    text-decoration: none;
+    color: black;
+    padding-inline: 5px;
+}
+
+
+.contenedor{
+    display: flex;
+}
+.gestiones {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; 
+    max-height: 100vh; 
+    width: 200px;
+    padding: 20px;
+    background-color: #f0f0f0; 
+    overflow-y: auto; 
+}
+
+.gestiones h2 {
+    margin: 10px 0; 
+    padding: 10px;
+    flex: 1;
+}
+
+
+.tabla{
+    padding: 15px;
+}
+
+/* para las selecciones de las gestiones */
+.usuario{
+    border:blue 2px solid;
+    background-color: #76C6F4 ;
+    background-size: cover;
+    text-decoration: none;
+}
+.producto{
+    border:blue 2px solid;
+    background-color: #76C6F4 ;
+    background-size: cover;
+    text-decoration: none;
+}
+.empleado{
+    border:blue 2px solid;
+    background-color: #76C6F4 ;
+    background-size: cover;
+    text-decoration: none;
+}
+
+/*diseño del boto*/
+.boton{
+    background-color: #0067A3;
+    font-size: 15px;
+    color: white;
+}
+
+/*para el formulario de las gestiones*/
+.filtrar{
+    padding: 20px;
+    width: 93%;
+    height: 100%;
+    display: flex;
+    justify-content: right;
+}
+
+.ingreso-datos{
+    padding: 15px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.ingreso-datos label{
+    padding: 10px;
+    margin: 10px;
+}
+
+/* para el responsive*/
+@media (min-width: 1200px) {
+    .contenedor {
+        flex-direction: row;
+    }
+
+    .gestiones {
+        max-height: 100vh;
+    }
+
+    .tabla {
+        max-width: 70%; 
+    }
+
+}
+
+@media (max-width: 1199px) {
+    .contenedor {
+        flex-direction: column;
+    }
+
+    .gestiones {
+        max-height: none;
+    }
+
+    .tabla {
+        max-width: 90%; 
+    }
+
+}
+
+@media (max-width: 767px) {
+    .contenedor {
+        flex-direction: column;
+    }
+
+    .gestiones {
+        max-height: none;
+    }
+
+    .tabla {
+        max-width: 100%; 
+    }
+
+}

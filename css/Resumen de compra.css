@@ -1,0 +1,71 @@
+body {
+    margin: 100px;
+    padding: 0px;
+    background-image: url(../img/fondo\ resumen\ compra.jpg);
+    background-size: cover; /* Ajusta la imagen al tamaño de la ventana */
+    background-repeat: no-repeat; /* Evita la repetición de la imagen */
+}
+.container {
+ 	display: flex;
+	background: white;
+}
+.contenedor {
+	display: flex;
+}
+.center{
+	text-align: center;
+}
+.botones{
+	display: flex; /* Establece la visualización como flexbox */
+    justify-content: center; /* Alinea los elementos al centro horizontalmente */
+	margin: auto;
+	padding: 10px;
+	border-radius: 10px;
+	width: 23%;
+	box-sizing: border-box;
+}
+.column {
+	flex: 1;
+	padding: 20px;
+	border: 1px;
+	margin: 10px;
+}
+.form{
+    display: flex;
+}
+.columna1 {
+	flex: 1;
+	padding: 5px;
+	margin: 5px;
+	text-align: right;
+}
+.columna2 {
+	flex: 1;
+	padding: 0;
+	margin: 5px;
+}
+.btn-precio{
+	background: salmon;
+	display: block;
+	padding: 10px;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 3px;
+	margin-bottom: 10px;
+	margin: 10px;
+	box-shadow: 10px 10px #888;
+}
+.btn-precio:hover{
+	background: rgba(247,100,84);
+}
+.linea-vertical {
+	border-left: 1px solid #ccc; /* Establece un borde izquierdo */
+	height: 500px; /* Establece la altura de la línea vertical */
+}
+table, th, td {
+	border: 1px;
+	border-collapse: collapse;
+	text-align: center;
+	padding: 5px;
+	font-family: Arial, Helvetica, sans-serif;
+}
