@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Productos</title>
     <link rel="stylesheet" href="../css/Productos.css">
+    <script src="../js/carrito.js"></script>
 
 </head>
 <body>
@@ -30,8 +31,7 @@
     </header>
 
     <nav class="categorias">
-        <h3>Categorias</h3>
-        
+        <h3>Categorias</h3>      
         <label for="menu-bar" class="icon-menu"><input type="checkbox"> Lentes de medida</label>
         <label for="menu-bar" class="icon-menu"><input type="checkbox"> Lentes de Sol</label> 
         <label for="menu-bar" class="icon-menu"><input type="checkbox"> Lentes de Contacto</label>
@@ -48,7 +48,7 @@
             <img src="../img/lentes hombres de negro.jpg" alt="Image" width="250" height="200">
             <div class="descripcion">
                 <p>S/ 70.00</p>
-                <a href="login.html"><button type="submit">añadir</button></a>
+                <button type="submit" class="pagar">añadir</button>
             </div>
         </div>
         <div class="productos">
@@ -125,5 +125,30 @@
         </div>
 
     </section>
+
+    <script>
+        // Definimos la función pagarprueba
+        function pagarprueba() {
+            var botonPagar = document.querySelector('.pagar');
+
+            // Agregamos un evento de click al botón
+            botonPagar.addEventListener('click', function() {
+                alert('Gracias por su compra');
+            });
+        }
+
+        // Llamamos a la función para que se ejecute
+        pagarprueba();
+    </script>
+    <!-- <script>
+        // Seleccionamos el botón de pagar
+        var botonPagar = document.querySelector('.pagar');
+
+        // Agregamos un evento de click al botón
+        botonPagar.addEventListener('click', function() {
+            alert('Gracias por su compra');
+        });
+    </script> -->
+
 </body>
 </html>
