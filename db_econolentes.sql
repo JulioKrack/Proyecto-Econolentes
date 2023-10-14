@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 12-10-2023 a las 23:17:24
+-- Tiempo de generación: 14-10-2023 a las 07:45:35
 -- Versión del servidor: 10.4.28-MariaDB
--- Versión de PHP: 8.0.28
+-- Versión de PHP: 8.2.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de datos: `cuentas(1)`
+-- Base de datos: `db_econolentes`
 --
 
 -- --------------------------------------------------------
@@ -50,7 +50,6 @@ CREATE TABLE `usuarios` (
   `Id` int(11) NOT NULL,
   `nombre` varchar(100) NOT NULL,
   `contrasena` varchar(100) NOT NULL,
-  `estado` tinyint(1) DEFAULT NULL,
   `rol_id` int(11) DEFAULT NULL,
   `telefono` varchar(100) NOT NULL,
   `email` varchar(100) NOT NULL,
@@ -61,12 +60,14 @@ CREATE TABLE `usuarios` (
 -- Volcado de datos para la tabla `usuarios`
 --
 
-INSERT INTO `usuarios` (`Id`, `nombre`, `contrasena`, `estado`, `rol_id`, `telefono`, `email`, `apellidos`) VALUES
-(27, 'fabrizio', '123', NULL, 1, '9123213', 'fabriziod@gmail.com', 'dias'),
-(28, '123', '123', NULL, 1, '123', 'safabriziod@gmail.com', '213'),
-(29, 'juan', '123', NULL, 2, '9123213', 'safsabriziod@gmail.com', 'diaz'),
-(30, 'carlitos', '123', NULL, 2, '923123', 'carlitos123@gmail.com', 'obregon'),
-(31, 'diana', '123', NULL, 2, '9213213', 'dianatello123@gmail.com', 'tello');
+INSERT INTO `usuarios` (`Id`, `nombre`, `contrasena`, `rol_id`, `telefono`, `email`, `apellidos`) VALUES
+(27, 'fabrizio', '123', 1, '9123213', 'fabriziod@gmail.com', 'dias'),
+(28, '123', '123', 1, '123', 'safabriziod@gmail.com', '213'),
+(29, 'juan', '123', 2, '9123213', 'safsabriziod@gmail.com', 'diaz'),
+(30, 'carlitos', '123', 2, '923123', 'carlitos123@gmail.com', 'obregon'),
+(31, 'diana', '123', 2, '9213213', 'dianatello123@gmail.com', 'tello'),
+(32, 'prueba1', '123', 2, '123312', 'prueba@utp.com', 'prueba'),
+(36, 'prueba3', '123', 1, '12312', 'prueba3@utp.pe', 'prueba');
 
 --
 -- Índices para tablas volcadas
@@ -99,7 +100,7 @@ ALTER TABLE `roles`
 -- AUTO_INCREMENT de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
+  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
 
 --
 -- Restricciones para tablas volcadas
