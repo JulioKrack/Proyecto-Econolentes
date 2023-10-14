@@ -10,6 +10,9 @@ body {
     background-image: url('../img/fondo.jpg');
     background-size: cover; 
     background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    width: 100%;
 }
 
 #container {
@@ -53,6 +56,35 @@ body {
     margin-top: 30px;
 }
 
+@media only screen and (max-width: 600px) {
+    #container {
+        margin-top: 100px;
+        padding: 50px;
+    }
+
+    .datos-registro {
+        margin-top: 20px; /* Ajusta el margen superior */
+        flex-direction: column;
+    }
+
+    .datos-registro label {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .datos-registro input {
+        width: 100%;
+    }
+
+    .formulario {
+        width: 100%;
+    }
+
+    .btn-registro button {
+        padding: 8px 16px;
+        margin-top: 20px;
+    }
+}
 
 
 

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/inicio.css">
+</head>
+<body>
+    <header class="header">
+
+        <div class="menu container">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="inicio.html">Inicio</a></li>
+                    <li><a href="productos.html">Producto</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="login.html">Salir</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-content container">
+            <h1 style="text-align: center;">ECONOLENTES</h1> 
+            <h2>Hola, <span id="nombreUsuario"></span>!</h2>
+        </div>      
+    </header>
+
+    <section class="tipos">
+        
+        <div class="tipos-content container">
+            <h2>Los tipos de lentes</h2>
+            <p class="txt-p">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Tenetur ipsum voluptate, ea sunt quisquam omnis quasi sequi 
+                suscipit praesentium voluptatum labore enim harum facilis!
+                 Deleniti tempore illo fugit quisquam dolore.
+            </p>
+            <div class="tipos-group">
+                <div class="tipos-1">
+                    <img src="biconvexas.jpg" alt="">
+                    <h3>Cafe lorem</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Tenetur ipsum voluptate, ea sunt quisquam omnis quasi sequi
+                    </p>
+                </div>
+                <div class="tipos-1">
+                    <img src="plano.jpg" alt="">
+                    <h3>Cafe lorem</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Tenetur ipsum voluptate, ea sunt quisquam omnis quasi sequi
+                    </p>
+                </div>
+                <div class="tipos-1">
+                    <img src="convavo.jpg" alt="">
+                    <h3>Cafe lorem</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Tenetur ipsum voluptate, ea sunt quisquam omnis quasi sequi
+                    </p>
+                </div>
+                
+            </div>
+            <a href="#" class="btn-1">Informacion</a>
+        </div>
+
+        
+        
+    </section>
+
+
+
+
+
+    <main class="services">
+        <div class="services-content container">
+            <h2>Misión y Visión</h2>
+            <div class="services-group">
+                <div class="services-1">
+                    <img src="icons8-futurama-hermes-conrad-50.png" alt="">
+                    <h3>Servicio 1</h3>
+                </div>
+                <div class="services-1">
+                    <img src="icons8-futurama-hermes-conrad-50.png" alt="">
+                    <h3>Servicio 2</h3>
+                </div>
+                <div class="services-1">
+                    <img src="icons8-futurama-hermes-conrad-50.png" alt="">
+                    <h3>Servicio 3</h3>
+                </div>
+            </div>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                Explicabo autem quibusdam temporibus tempora ea obcaecati 
+                ex doloremque. Harum, sunt architecto? Mollitia magni odio,
+                 vel quod autem eius placeat quae est.
+            </p>
+            <a href="#" class="btn-1">Informacion</a>
+            
+        </div>
+    </main>
+
+
+
+    <footer class="footer">
+        <div class="footer-content container">
+            <div class="link">
+                <h3>lorem</h3>
+                <ul>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                </ul>
+            </div>
+            <div class="link">
+                <h3>lorem</h3>
+                <ul>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                </ul>
+            </div>
+            <div class="link">
+                <h3>lorem</h3>
+                <ul>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                </ul>
+            </div>
+            <div class="link">
+                <h3>lorem</h3>
+                <ul>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const nombreUsuario = urlParams.get('nombre');
+        document.getElementById('nombreUsuario').innerText = nombreUsuario;
+    </script>
+</body>
+</html>

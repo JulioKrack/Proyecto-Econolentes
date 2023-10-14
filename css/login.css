@@ -7,8 +7,11 @@ body {
     min-height: 100vh;
     text-align: center;
     background-image: url(../img/inicio.jpg);
-    background-size: cover;
+    background-size: cover; 
     background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    width: 100%;
 }
 
 #container{
@@ -58,7 +61,30 @@ body {
     padding-top: 20px;
 }
 
+@media only screen and (max-width: 600px) {
+    #container {
+        margin-top: 250px;
+        padding: 30px;
+    }
 
+    .datos-registro {
+        flex-direction: column;
+    }
+
+    .datos-registro label {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .datos-registro input {
+        width: 100%;
+    }
+
+    .btn-iniciar button {
+        padding: 8px 16px;
+    }
+
+}
 
 
 

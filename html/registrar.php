@@ -2,7 +2,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "bd_econolentes";
+$dbname = "db_econolentes";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
@@ -23,7 +23,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     if ($email_result !== false) {
         if ($email_result->num_rows > 0) {
             echo '<script>alert("Este nombre ya está registrado.");</script>';
-            echo '<script>window.location.href = "registro.html";</script>';
+            echo '<script>window.location.href = "index.html";</script>';
             exit();
         }
     } else {
